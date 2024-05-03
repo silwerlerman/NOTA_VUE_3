@@ -20,11 +20,11 @@
           buttonText="Войти"
           buttonColor="darkBlue"
         />
-        <Button
+        <!-- <Button
           :fullWidth="true"
           buttonSize="big"
           buttonText="Забыли пароль?"
-        />
+        /> -->
       </div>
     </div>
   </div>
