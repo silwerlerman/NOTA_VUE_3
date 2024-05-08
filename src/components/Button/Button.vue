@@ -69,8 +69,8 @@ import Icon from '@components/Icon/Icon.vue';
 import { computed } from 'vue';
 
 type Props = {
-  buttonSize?: string;
-  buttonColor?: string;
+  buttonSize?: 'big' | 'medium' | 'small';
+  buttonColor?: 'blue' | 'darkBlue' | 'transparent' | 'white';
   buttonText?: string;
   disabled?: boolean;
   iconColor?: string;

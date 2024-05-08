@@ -2338,14 +2338,14 @@
 
 <script setup lang="ts">
 type Props = {
-  iconName?: string;
+  iconName: string;
   iconColor?: string;
   disabledColor?: string;
   disabled?: boolean;
 };
 
 withDefaults(defineProps<Props>(), {
-  iconName: 'Icon',
+  iconName: '',
   iconColor: '',
   target: '#cdd4da'
 });

@@ -37,3 +37,77 @@ body {
   height: 100vh;
   background-color: $background-dove;
 }
+
+:root,
+:before,
+:after,
+* {
+  --vf-color-disabled: #99a5b3;
+  --vf-color-danger: #fc311e;
+  --vf-color-input: #212121;
+  --vf-color-input-danger: #fc311e;
+  --vf-border-color-input: transparent;
+  --vf-border-color-input-danger: #fc311e;
+  --vf-bg-input: #e9edf2;
+  --vf-bg-input-success: #e9edf2;
+  --vf-bg-disabled: #e9edf2;
+  --vf-bg-input-focus: #e9edf2;
+  --vf-bg-addon: #e9edf2;
+  --vf-color-floating-success: #62717e;
+  --vf-line-height: 24px;
+  --vf-font-size: 16px;
+  --vf-py-input: 8px;
+  --vf-radius-input: 4px;
+  --vf-border-width-input-t: 2px;
+  --vf-border-width-input-r: 2px;
+  --vf-border-width-input-b: 2px;
+  --vf-border-width-input-l: 2px;
+  --vf-border-color-input-focus: #0088ff;
+  --vf-border-color-input-hover: #0088ff;
+}
+
+.vf-input-group {
+  & .vf-input-field {
+    background: $grey8;
+    transition: none;
+  }
+
+  &:hover,
+  &:focus {
+    border: 2px solid $blue40;
+  }
+
+  &-danger {
+    border-radius: 4px;
+
+    & > .vf-input-field {
+      outline-color: transparent;
+    }
+
+    & .vf-floating-label {
+      color: $red !important;
+    }
+  }
+
+  &-focused {
+    border: 2px solid $blue40 !important;
+
+    & .vf-floating-label {
+      color: $blue40;
+    }
+  }
+
+  &-disabled {
+    & .vf-input-field::placeholder,
+    & .vf-floating-label {
+      color: $grey24;
+    }
+  }
+}
+
+.vf-element-error {
+  margin-left: 16px;
+  max-width: 260px;
+  font-size: 12px;
+  line-height: 16px;
+}
